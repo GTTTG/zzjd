@@ -9,8 +9,10 @@ import com.oracle.webserver_v01servlet.WebServlet;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
+	@Override
 	public void doPost(HttpServletRequest request, HttpServletResponse response) {
 		PrintWriter pt = new PrintWriter(response.getBao());
+		System.out.println("1111");
 		// 响应行
 		pt.println("HTTP/1.1 200 OK");
 		// 若干行响应头
